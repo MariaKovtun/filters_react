@@ -1,0 +1,37 @@
+button {
+  background:white;
+  font-size: 15px;
+  margin-right:3px;
+  border-width:1px;
+  padding: 10px;
+}
+
+.active {
+  background:gray;
+  color:white;
+  
+}
+
+.block {
+  display: block;
+  margin-top:10px;
+}
+
+.block::before {
+  display: block;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.block .image {
+  display: inline-block;
+  width: 200px;
+  height:200px;
+  padding-right:10px;
+}
+
+.block.object-fit img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
